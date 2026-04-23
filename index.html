@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me - Ryan Rinkel</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            max-width: 900px;
+            width: 100%;
+            padding: 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 0 60px rgba(255,255,255,0.05);
+            margin-bottom: 2rem;
+        }
+        video, img.fallback {
+            width: 100%;
+            display: block;
+            border-radius: 16px;
+        }
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.3;
+            font-weight: 300;
+        }
+        .refresh-note {
+            position: fixed;
+            bottom: 1rem;
+            font-size: 0.7rem;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-wrapper">
+            <video autoplay loop muted playsinline>
+                <source src="latest.webm" type="video/webm">
+            </video>
+        </div>
+        <h1>Ryan Rinkel</h1>
+        <p class="subtitle">This video changes every 30 minutes. Each one is AI-generated and unique.</p>
+    </div>
+    <p class="refresh-note">Refresh for the latest generation</p>
+    <script>
+        // Cache-bust: reload video source every 5 min to catch updates
+        setInterval(() => {
+            const video = document.querySelector('video');
+            const src = video.querySelector('source');
+            src.src = 'latest.webm?t=' + Date.now();
+            video.load();
+            video.play();
+        }, 300000);
+    </script>
+</body>
+</html>
