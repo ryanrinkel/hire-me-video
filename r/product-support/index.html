@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ryan Rinkel — Product Support</title>
+<style>
+  :root{
+    --bg:#faf9f5; --ink:#2b2118; --muted:#6b5d4f; --accent:#c65d2e; --line:#e4ddd0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.5; font-size:15px;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .sheet{max-width:820px; margin:0 auto; padding:48px 56px;}
+  header{border-bottom:2px solid var(--accent); padding-bottom:16px; margin-bottom:22px;}
+  h1{font-family:Georgia,"Times New Roman",serif; font-size:30px; letter-spacing:.3px;}
+  .role{color:var(--accent); font-weight:600; font-size:15px; margin-top:2px;}
+  .contact{color:var(--muted); font-size:13px; margin-top:10px; line-height:1.7;}
+  .contact a{color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line);}
+  .contact a:hover{color:var(--accent);}
+  section{margin-bottom:20px;}
+  h2{font-family:Georgia,serif; font-size:13px; text-transform:uppercase; letter-spacing:1.5px;
+     color:var(--accent); margin-bottom:10px; border-bottom:1px solid var(--line); padding-bottom:4px;}
+  p.summary{font-size:15px;}
+  ul{list-style:none;}
+  .bring li{position:relative; padding-left:18px; margin-bottom:9px;}
+  .bring li::before{content:"▹"; position:absolute; left:0; color:var(--accent);}
+  .bring li strong{color:var(--ink);}
+  .job{margin-bottom:15px;}
+  .job-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;}
+  .job-title{font-weight:700;}
+  .job-org{color:var(--accent);}
+  .job-date{color:var(--muted); font-size:13px; white-space:nowrap;}
+  .job ul{margin-top:6px;}
+  .job li{position:relative; padding-left:16px; margin-bottom:5px; font-size:14.5px;}
+  .job li::before{content:"–"; position:absolute; left:0; color:var(--muted);}
+  .skills p{margin-bottom:6px; font-size:14.5px;}
+  .skills strong{color:var(--accent);}
+  .note{color:var(--muted); font-style:italic; font-size:13.5px; margin-top:8px;}
+  .edu{font-size:14.5px;}
+  a{color:var(--accent);}
+  @media print{
+    body{background:#fff; font-size:13.5px;}
+    .sheet{max-width:none; padding:0 8px; margin:0;}
+    h1{font-size:26px;}
+    section{margin-bottom:15px;}
+    .job{page-break-inside:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+    .contact a{border-bottom:none;}
+  }
+  @page{margin:14mm;}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <h1>Ryan Rinkel</h1>
+    <div class="role">Product Support Specialist</div>
+    <div class="contact">
+      San Francisco, CA &nbsp;·&nbsp; (347) 850-7668 &nbsp;·&nbsp;
+      <a href="mailto:ryan.r.rinkel@gmail.com">ryan.r.rinkel@gmail.com</a><br>
+      <a href="https://www.linkedin.com/in/ryan-rinkel-09a48888/">linkedin.com/in/ryan-rinkel-09a48888</a>
+      &nbsp;·&nbsp; Claudot (Claude Code + MCP): <a href="https://claudotcode.com">claudotcode.com</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Technically fluent content and publishing professional with 5+ years at a
+    high-growth tech company managing reactive issues, complex stakeholders, and production systems at
+    global scale. I diagnose problems calmly under time pressure, communicate clearly and empathetically
+    with a wide range of audiences, and I'm genuinely fluent in LLMs and the tools around them — I build
+    with them daily. I'm looking to bring that mix of technical troubleshooting, ownership, and user
+    empathy directly to supporting Anthropic's users.</p>
+  </section>
+
+  <section>
+    <h2>Relevant Strengths for Product Support</h2>
+    <ul class="bring">
+      <li><strong>Reactive issue management at scale.</strong> Owned time-sensitive publishing across
+        40+ channels in 29 languages — triaging issues, hitting embargoes and deadlines, and keeping
+        demanding stakeholders informed in a fast, high-volume environment.</li>
+      <li><strong>Real technical literacy.</strong> Comfortable in CMS platforms and raw codebases; work
+        hands-on with APIs, automation tools, scripting (Python, JavaScript), and HTML/CSS.</li>
+      <li><strong>LLM fluency most applicants don't have.</strong> I build with LLMs and AI tooling daily
+        — I created Claudot (claudotcode.com), a source-available developer tool built on the Claude Code
+        CLI with 15 custom MCP tools. I can read API behavior, error logs, and developer issues and speak
+        the product's language with users from day one.</li>
+      <li><strong>Clear, empathetic communication.</strong> A decade of teaching and live performance —
+        I'm good at meeting people where they are and explaining hard things simply.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job-head">
+        <span><span class="job-title">Global Publishing Producer &amp; Content Manager</span> — <span class="job-org">Riot Games</span></span>
+        <span class="job-date">2019 – 2024</span>
+      </div>
+      <ul>
+        <li>Managed high-volume, time-sensitive content publishing across 40+ YouTube channels in 29
+          languages, owning localization timing, embargoes, and reactive issue management against hard deadlines.</li>
+        <li>Coordinated live releases under pressure, including content tied to the Arcane (Netflix)
+          launch, partnering with engineering and production teams to resolve issues in real time.</li>
+        <li>Managed and troubleshot a large CMS and supporting codebases; coordinated expectations across
+          product owners and global stakeholder teams.</li>
+        <li>Served as product owner for Tellstones: King's Gambit, shipping the game and its supporting
+          content end to end.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head">
+        <span><span class="job-title">Creative Director &amp; Developer</span> — <span class="job-org">Story Games</span></span>
+        <span class="job-date">2024 – Present</span>
+      </div>
+      <ul>
+        <li>Build AI-assisted systems hands-on, including programming the alpha demo in Godot 4 and
+          integrating generative models via APIs and automation workflows (n8n, GPT).</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head">
+        <span><span class="job-title">Private Tutor</span> — <span class="job-org">Varsity Tutors</span></span>
+        <span class="job-date">2015 – 2018</span>
+      </div>
+      <ul>
+        <li>1-on-1 and group tutoring (SAT writing, history, literature, executive functioning) with
+          self-driven client acquisition and retention — sustained, high-empathy customer relationships.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head">
+        <span><span class="job-title">Founder, Producer &amp; Director</span> — <span class="job-org">The Puppet Shakespeare Players</span></span>
+        <span class="job-date">2010 – 2019</span>
+      </div>
+      <ul>
+        <li>Built and ran a theater company for 10 years (NYT Critics' Pick); managed budgets,
+          stakeholders, and teams, and delivered education workshops for ages 10–22.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <p><strong>Technical:</strong> APIs, MCP tools, CMS administration, Python, JavaScript/jQuery,
+      HTML/CSS, automation (n8n), LLM/AI tooling (Claude Code, GPT), command line</p>
+    <p><strong>Support strengths:</strong> reactive issue triage, stakeholder management, written
+      communication, user empathy, working calmly in fast-paced/on-call situations</p>
+    <p><strong>Tools:</strong> Notion, Google Workspace, Premiere Pro</p>
+    <p class="note">Gap to close honestly: limited direct exposure to SSO/SAML/OAuth troubleshooting —
+      ramping on enterprise auth flows.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p class="edu"><strong>Marymount Manhattan College</strong> — BFA, 2010 (3.6 GPA). Additional study in
+      Business Administration and History. SAT: 800 Reading/English.</p>
+  </section>
+
+</div>
+</body>
+</html>

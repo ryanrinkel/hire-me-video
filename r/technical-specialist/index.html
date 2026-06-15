@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ryan Rinkel — Technical Specialist</title>
+<style>
+  :root{
+    --bg:#faf9f5; --ink:#2b2118; --muted:#6b5d4f; --accent:#c65d2e; --line:#e4ddd0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.5; font-size:15px;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .sheet{max-width:820px; margin:0 auto; padding:48px 56px;}
+  header{border-bottom:2px solid var(--accent); padding-bottom:16px; margin-bottom:22px;}
+  h1{font-family:Georgia,"Times New Roman",serif; font-size:30px; letter-spacing:.3px;}
+  .role{color:var(--accent); font-weight:600; font-size:15px; margin-top:2px;}
+  .contact{color:var(--muted); font-size:13px; margin-top:10px; line-height:1.7;}
+  .contact a{color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line);}
+  .contact a:hover{color:var(--accent);}
+  section{margin-bottom:20px;}
+  h2{font-family:Georgia,serif; font-size:13px; text-transform:uppercase; letter-spacing:1.5px;
+     color:var(--accent); margin-bottom:10px; border-bottom:1px solid var(--line); padding-bottom:4px;}
+  p.summary{font-size:15px;}
+  ul{list-style:none;}
+  .bring li{position:relative; padding-left:18px; margin-bottom:9px;}
+  .bring li::before{content:"▹"; position:absolute; left:0; color:var(--accent);}
+  .bring li strong{color:var(--ink);}
+  .job{margin-bottom:15px;}
+  .job-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;}
+  .job-title{font-weight:700;}
+  .job-org{color:var(--accent);}
+  .job-date{color:var(--muted); font-size:13px; white-space:nowrap;}
+  .job ul{margin-top:6px;}
+  .job li{position:relative; padding-left:16px; margin-bottom:5px; font-size:14.5px;}
+  .job li::before{content:"–"; position:absolute; left:0; color:var(--muted);}
+  .skills p{margin-bottom:6px; font-size:14.5px;}
+  .skills strong{color:var(--accent);}
+  .edu{font-size:14.5px;}
+  a{color:var(--accent);}
+  @media print{
+    body{background:#fff; font-size:12px; line-height:1.4;}
+    .sheet{max-width:none; padding:0; margin:0;}
+    h1{font-size:23px;}
+    .role{font-size:13px;}
+    .contact{font-size:11.5px; margin-top:7px;}
+    header{margin-bottom:14px; padding-bottom:11px;}
+    h2{font-size:11.5px; margin-bottom:6px;}
+    section{margin-bottom:11px;}
+    p.summary,.skills p,.edu{font-size:12px;}
+    .bring li{margin-bottom:5px;}
+    .job{margin-bottom:9px; page-break-inside:avoid;}
+    .job li{font-size:11.5px; margin-bottom:3px;}
+    a{color:var(--ink); text-decoration:none;}
+    .contact a{border-bottom:none;}
+  }
+  @page{margin:12mm;}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <h1>Ryan Rinkel</h1>
+    <div class="role">Technical Specialist, Claude Code</div>
+    <div class="contact">
+      San Francisco, CA &nbsp;·&nbsp; (347) 850-7668 &nbsp;·&nbsp;
+      <a href="mailto:ryan.r.rinkel@gmail.com">ryan.r.rinkel@gmail.com</a><br>
+      <a href="https://www.linkedin.com/in/ryan-rinkel-09a48888/">linkedin.com/in/ryan-rinkel-09a48888</a>
+      &nbsp;·&nbsp; Claudot (Claude Code + MCP): <a href="https://claudotcode.com">claudotcode.com</a>
+      &nbsp;·&nbsp; Tutorial demo (550K+ views): <a href="https://www.youtube.com/watch?v=p0lol1-Xt3Q">youtu.be/p0lol1-Xt3Q</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Builder, educator, and technical communicator who ships with Claude Code.
+    I built and released <strong>Claudot</strong> — a source-available developer tool that embeds
+    Claude inside the Godot editor via the Claude Code CLI and 15 custom MCP (Model Context Protocol)
+    tools. On top of that, I have 5+ years translating complex systems into demos, tutorials, and live
+    presentations that reach hundreds of thousands of people. I pair hands-on development (Python, MCP
+    servers, APIs, Godot) with on-camera presence and a decade of teaching — exactly the blend this role
+    calls for: build it, demo it, teach it, and bring engineering teams along.</p>
+  </section>
+
+  <section>
+    <h2>What I'd Bring to This Role</h2>
+    <ul class="bring">
+      <li><strong>I build with Claude Code and MCP — and ship it.</strong> Created Claudot
+        (claudotcode.com), a source-available plugin that integrates Claude into the Godot game engine.
+        It runs on the Claude Code CLI, exposes 15 custom MCP tools for live scene manipulation, and runs
+        autonomous tests that self-fix before handing back to the developer — exactly the "proprietary
+        Claude capabilities: subagents, MCP servers, managed settings" this role centers on.</li>
+      <li><strong>Technical content that performs.</strong> Wrote, produced, and hosted a product
+        tutorial with 550K+ views, translating complex mechanics into a clear, accessible walkthrough —
+        the same skill behind recorded demos, tutorials, and blog posts for developers.</li>
+      <li><strong>More working AI builds.</strong> A generative video pipeline (FLUX + Wan2.2) on cloud
+        GPUs with automated deployment, and an AI analysis agent using GPT, n8n, Pinecone, and API
+        integrations.</li>
+      <li><strong>Live delivery under pressure.</strong> A decade performing, directing, and teaching
+        live — comfortable delivering keynotes, running workshops, and live-coding demos for a room.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Selected Projects</h2>
+    <div class="job">
+      <div class="job-head">
+        <span><span class="job-title">Claudot</span> — <span class="job-org">Creator</span> · claudotcode.com</span>
+        <span class="job-date">Source-available · v3.0-BETA on GitHub</span>
+      </div>
+      <ul>
+        <li>Built a plugin that embeds Claude directly in the Godot editor, powered by the Claude Code
+          CLI and compatible with any OpenAI-compatible API endpoint.</li>
+        <li>Designed and implemented 15 custom MCP tools for live scene manipulation — node
+          create/delete, property inspection, reparenting, GDScript reads.</li>
+        <li>Architected a multi-layer system: GDScript editor plugin + a Python bridge daemon
+          (uv / Python 3.10+) + the Claude Code backbone.</li>
+        <li>Added autonomous testing (GUT) where Claude runs tests, reads results, and self-fixes
+          failures before returning control, plus visual debugging via screenshot capture and log analysis.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head">
+        <span><span class="job-title">Generative AI builds</span> — <span class="job-org">Independent</span></span>
+        <span class="job-date">2024 – Present</span>
+      </div>
+      <ul>
+        <li>Generative video pipeline (FLUX + Wan2.2) on cloud GPU infrastructure (Vast.ai) with
+          automated publishing to a live web deployment.</li>
+        <li>Data-driven AI agent analyzing real-estate listings and imagery to surface investment
+          opportunities — GPT, n8n, Pinecone, Google Sheets, and API integrations into decision-ready reports.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job-head">
+        <span><span class="job-title">Creative Director &amp; AI Developer</span> — <span class="job-org">Story Games</span></span>
+        <span class="job-date">2024 – Present</span>
+      </div>
+      <ul>
+        <li>Lead design and development of AI-assisted storytelling systems that integrate generative
+          models into interactive, player-driven experiences.</li>
+        <li>Serve as the team's developer in the absence of a dedicated engineer — programmed the alpha
+          demo in Godot 4 and defined the team's applied approach to generative AI.</li>
+        <li>Design AI-driven iteration workflows (prototyping, scripting, playtest analysis) that
+          compress build-and-test cycles.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head">
+        <span><span class="job-title">Global Publishing Producer, Content Manager, Game Designer</span> — <span class="job-org">Riot Games</span></span>
+        <span class="job-date">2019 – 2024</span>
+      </div>
+      <ul>
+        <li>Wrote, produced, and hosted a tutorial video (550K+ views) that translated complex gameplay
+          mechanics into an accessible, widely shared explainer.</li>
+        <li>Designed and ran content pipelines across 40+ YouTube channels in 29 languages — localization
+          timing, embargoes, and reactive issue management, including live releases tied to the Arcane
+          (Netflix) launch.</li>
+        <li>Served as product owner for Tellstones: King's Gambit — designed, produced, and shipped the
+          physical game and its supporting content end to end.</li>
+        <li>Partnered with R&amp;D on early prototypes exploring AI-assisted storytelling and emergent,
+          UGC-influenced mechanics.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head">
+        <span><span class="job-title">Founder, Producer &amp; Director</span> — <span class="job-org">The Puppet Shakespeare Players</span></span>
+        <span class="job-date">2010 – 2019</span>
+      </div>
+      <ul>
+        <li>Founded and grew a theater company for 10 years; earned a New York Times Critics' Pick and an
+          off-Broadway run.</li>
+        <li>Built an original system for teaching Shakespeare and designed/delivered education workshops
+          for students ages 10–22.</li>
+        <li>Directed and performed in 50+ live productions — narrative, pacing, and live audience
+          engagement at a professional level.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <p><strong>Building with AI:</strong> Claude Code (CLI + plugin development), MCP servers / custom MCP
+      tools, generative pipelines (FLUX, Wan2.2, GPT), automation (n8n), vector search (Pinecone), API integration</p>
+    <p><strong>Code:</strong> Python, JavaScript/jQuery, HTML/CSS, Godot, Unity</p>
+    <p><strong>Content &amp; delivery:</strong> technical tutorials, recorded demos, video production
+      (Premiere Pro), public speaking, on-camera hosting, workshop facilitation</p>
+    <p><strong>Collaboration:</strong> cross-functional production, stakeholder management, localization at global scale</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p class="edu"><strong>Marymount Manhattan College</strong> — BFA, 2010 (3.6 GPA). Additional study in
+      Business Administration, History, and Linguistics.</p>
+  </section>
+
+</div>
+</body>
+</html>
